@@ -4,8 +4,18 @@ import os
 from train import trainer
 from evaluation import evaluate
 
+from torchvision import datasets, transforms
+import torch
+
 
 if __name__ == '__main__':
+
+    test = datasets.ImageFolder(getcwd() + '/task2/test/', transforms.Compose([transforms.Grayscale(),
+                                                                               transforms.ToTensor()]))
+    test_loader = torch.utils.data.DataLoader(test, batch_size=20)
+
+    print(len(test))
+    exit()
     parser = argparse.ArgumentParser()
 
     parser.add_argument('--data_path', type=str, default=os.getcwd()+'/Data/')

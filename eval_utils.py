@@ -32,6 +32,7 @@ def evaluate_model(model, test_loader):
     :param cnn_model: trained model
     :param test_loader: test dataset loader
     '''
+
     count = 1
     with torch.no_grad():
         correct = 0

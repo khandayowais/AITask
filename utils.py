@@ -16,6 +16,7 @@ def convert_to_binary(labels):
     return
         labels: labels of size N having 2 classes
     '''
+
     binary_labels = labels.copy()
     for index in range(len(labels)):
         if labels[index] in class_shoe:

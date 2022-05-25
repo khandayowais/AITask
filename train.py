@@ -72,6 +72,7 @@ def trainer(PATH, EPOCHS=5, BATCH_SIZE=500):
             train_losses.append(loss.item())
             train_acces.append(accuracy(outputs, labels))
         # Validation of the model
+
         model.eval()
         for images, labels in val_loader:
                                

@@ -13,7 +13,6 @@ def evaluate(MODEL_PATH,DATA_DIR, BATCH_SIZE):
     :param BATCH_SIZE: batch size
     '''
 
-    
     test_data_loader = dataset_load(PATH=DATA_DIR, KIND='t10k', BATCH_SIZE=BATCH_SIZE)
     
     model = CNNModel().to(device)

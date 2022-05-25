@@ -74,7 +74,7 @@ def gaussian_blur(count=2):
         save_images(train_loader, i, type='rotate')
 
 def create_synthetic_images():
-    count = 1000
+    count = 100
     #random_horizontal_flip(count=4)
     random_affine(count)
     #random_vertical_flip(count=4)
@@ -83,3 +83,4 @@ def create_synthetic_images():
     gaussian_affine(count=28)
     random_rotation_affine(count)
 
+create_synthetic_images()
