@@ -14,8 +14,7 @@ if __name__ == '__main__':
                                                                                transforms.ToTensor()]))
     test_loader = torch.utils.data.DataLoader(test, batch_size=20)
 
-    print(len(test))
-    exit()
+    
     parser = argparse.ArgumentParser()
 
     parser.add_argument('--data_path', type=str, default=os.getcwd()+'/Data/')
