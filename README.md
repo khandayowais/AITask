@@ -7,3 +7,4 @@ the trained model will be saved in the pretrained model folder.
 
 you can specify arguments like function as train or test , Batch size , epochs etc
 
+To run task2 run the task2.py from the terminal. The model will start training by default for 300 epochs on the syntheic images
