@@ -115,4 +115,4 @@ def trainer(EPOCHS=5, BATCH_SIZE=128):
 
     evaluate_model(model, test_loader)
 
-trainer(300)
+trainer(100)
